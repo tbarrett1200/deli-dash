@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1428A6F1CFE64C7008BD39A /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1428A6E1CFE64C7008BD39A /* CheckBox.swift */; };
+		F1428A711CFF353B008BD39A /* SandwichViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1428A701CFF353B008BD39A /* SandwichViewController.swift */; };
+		F14D2CFE1D724B09001644CB /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D2CFD1D724B09001644CB /* CheckoutViewController.swift */; };
+		F14D2D001D7251F8001644CB /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D2CFF1D7251F8001644CB /* Order.swift */; };
+		F1FA0EBA1CE63C2000C2D200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA0EB91CE63C2000C2D200 /* AppDelegate.swift */; };
+		F1FA0EBC1CE63C2000C2D200 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA0EBB1CE63C2000C2D200 /* ViewController.swift */; };
+		F1FA0EBF1CE63C2000C2D200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FA0EBD1CE63C2000C2D200 /* Main.storyboard */; };
+		F1FA0EC11CE63C2000C2D200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FA0EC01CE63C2000C2D200 /* Assets.xcassets */; };
+		F1FA0EC41CE63C2000C2D200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FA0EC21CE63C2000C2D200 /* LaunchScreen.storyboard */; };
+		F1FA0ECF1CE63C2000C2D200 /* DeliDashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA0ECE1CE63C2000C2D200 /* DeliDashTests.swift */; };
+		F1FA0EDA1CE63C2000C2D200 /* DeliDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA0ED91CE63C2000C2D200 /* DeliDashUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1FA0ECB1CE63C2000C2D200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1FA0EAE1CE63C2000C2D200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1FA0EB51CE63C2000C2D200;
+			remoteInfo = DeliDash;
+		};
+		F1FA0ED61CE63C2000C2D200 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1FA0EAE1CE63C2000C2D200 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1FA0EB51CE63C2000C2D200;
+			remoteInfo = DeliDash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F1428A6E1CFE64C7008BD39A /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckBox.swift; path = "../../../../Downloads/checkbox-master-2c27241dc2c7ba5feb03d107eba40e7f171f69f1/CheckBox.swift"; sourceTree = "<group>"; };
+		F1428A701CFF353B008BD39A /* SandwichViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandwichViewController.swift; sourceTree = "<group>"; };
+		F14D2CFD1D724B09001644CB /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		F14D2CFF1D7251F8001644CB /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		F1FA0EB61CE63C2000C2D200 /* DeliDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1FA0EB91CE63C2000C2D200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1FA0EBB1CE63C2000C2D200 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1FA0EBE1CE63C2000C2D200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1FA0EC01CE63C2000C2D200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1FA0EC31CE63C2000C2D200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1FA0EC51CE63C2000C2D200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1FA0ECA1CE63C2000C2D200 /* DeliDashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliDashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1FA0ECE1CE63C2000C2D200 /* DeliDashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliDashTests.swift; sourceTree = "<group>"; };
+		F1FA0ED01CE63C2000C2D200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1FA0ED51CE63C2000C2D200 /* DeliDashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliDashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1FA0ED91CE63C2000C2D200 /* DeliDashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliDashUITests.swift; sourceTree = "<group>"; };
+		F1FA0EDB1CE63C2000C2D200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1FA0EB31CE63C2000C2D200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FA0EC71CE63C2000C2D200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FA0ED21CE63C2000C2D200 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1FA0EAD1CE63C2000C2D200 = {
+			isa = PBXGroup;
+			children = (
+				F1FA0EB81CE63C2000C2D200 /* DeliDash */,
+				F1FA0ECD1CE63C2000C2D200 /* DeliDashTests */,
+				F1FA0ED81CE63C2000C2D200 /* DeliDashUITests */,
+				F1FA0EB71CE63C2000C2D200 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1FA0EB71CE63C2000C2D200 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1FA0EB61CE63C2000C2D200 /* DeliDash.app */,
+				F1FA0ECA1CE63C2000C2D200 /* DeliDashTests.xctest */,
+				F1FA0ED51CE63C2000C2D200 /* DeliDashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1FA0EB81CE63C2000C2D200 /* DeliDash */ = {
+			isa = PBXGroup;
+			children = (
+				F1FA0EB91CE63C2000C2D200 /* AppDelegate.swift */,
+				F1FA0EBB1CE63C2000C2D200 /* ViewController.swift */,
+				F1FA0EBD1CE63C2000C2D200 /* Main.storyboard */,
+				F14D2CFD1D724B09001644CB /* CheckoutViewController.swift */,
+				F14D2CFF1D7251F8001644CB /* Order.swift */,
+				F1428A701CFF353B008BD39A /* SandwichViewController.swift */,
+				F1428A6E1CFE64C7008BD39A /* CheckBox.swift */,
+				F1FA0EC01CE63C2000C2D200 /* Assets.xcassets */,
+				F1FA0EC21CE63C2000C2D200 /* LaunchScreen.storyboard */,
+				F1FA0EC51CE63C2000C2D200 /* Info.plist */,
+			);
+			path = DeliDash;
+			sourceTree = "<group>";
+		};
+		F1FA0ECD1CE63C2000C2D200 /* DeliDashTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1FA0ECE1CE63C2000C2D200 /* DeliDashTests.swift */,
+				F1FA0ED01CE63C2000C2D200 /* Info.plist */,
+			);
+			path = DeliDashTests;
+			sourceTree = "<group>";
+		};
+		F1FA0ED81CE63C2000C2D200 /* DeliDashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1FA0ED91CE63C2000C2D200 /* DeliDashUITests.swift */,
+				F1FA0EDB1CE63C2000C2D200 /* Info.plist */,
+			);
+			path = DeliDashUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1FA0EB51CE63C2000C2D200 /* DeliDash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1FA0EDE1CE63C2000C2D200 /* Build configuration list for PBXNativeTarget "DeliDash" */;
+			buildPhases = (
+				F1FA0EB21CE63C2000C2D200 /* Sources */,
+				F1FA0EB31CE63C2000C2D200 /* Frameworks */,
+				F1FA0EB41CE63C2000C2D200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeliDash;
+			productName = DeliDash;
+			productReference = F1FA0EB61CE63C2000C2D200 /* DeliDash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1FA0EC91CE63C2000C2D200 /* DeliDashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1FA0EE11CE63C2000C2D200 /* Build configuration list for PBXNativeTarget "DeliDashTests" */;
+			buildPhases = (
+				F1FA0EC61CE63C2000C2D200 /* Sources */,
+				F1FA0EC71CE63C2000C2D200 /* Frameworks */,
+				F1FA0EC81CE63C2000C2D200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1FA0ECC1CE63C2000C2D200 /* PBXTargetDependency */,
+			);
+			name = DeliDashTests;
+			productName = DeliDashTests;
+			productReference = F1FA0ECA1CE63C2000C2D200 /* DeliDashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1FA0ED41CE63C2000C2D200 /* DeliDashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1FA0EE41CE63C2000C2D200 /* Build configuration list for PBXNativeTarget "DeliDashUITests" */;
+			buildPhases = (
+				F1FA0ED11CE63C2000C2D200 /* Sources */,
+				F1FA0ED21CE63C2000C2D200 /* Frameworks */,
+				F1FA0ED31CE63C2000C2D200 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1FA0ED71CE63C2000C2D200 /* PBXTargetDependency */,
+			);
+			name = DeliDashUITests;
+			productName = DeliDashUITests;
+			productReference = F1FA0ED51CE63C2000C2D200 /* DeliDashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1FA0EAE1CE63C2000C2D200 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alexander Leininger";
+				TargetAttributes = {
+					F1FA0EB51CE63C2000C2D200 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F1FA0EC91CE63C2000C2D200 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F1FA0EB51CE63C2000C2D200;
+					};
+					F1FA0ED41CE63C2000C2D200 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F1FA0EB51CE63C2000C2D200;
+					};
+				};
+			};
+			buildConfigurationList = F1FA0EB11CE63C2000C2D200 /* Build configuration list for PBXProject "DeliDash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1FA0EAD1CE63C2000C2D200;
+			productRefGroup = F1FA0EB71CE63C2000C2D200 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1FA0EB51CE63C2000C2D200 /* DeliDash */,
+				F1FA0EC91CE63C2000C2D200 /* DeliDashTests */,
+				F1FA0ED41CE63C2000C2D200 /* DeliDashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1FA0EB41CE63C2000C2D200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FA0EC41CE63C2000C2D200 /* LaunchScreen.storyboard in Resources */,
+				F1FA0EC11CE63C2000C2D200 /* Assets.xcassets in Resources */,
+				F1FA0EBF1CE63C2000C2D200 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FA0EC81CE63C2000C2D200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FA0ED31CE63C2000C2D200 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1FA0EB21CE63C2000C2D200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F14D2D001D7251F8001644CB /* Order.swift in Sources */,
+				F1428A6F1CFE64C7008BD39A /* CheckBox.swift in Sources */,
+				F1FA0EBC1CE63C2000C2D200 /* ViewController.swift in Sources */,
+				F1FA0EBA1CE63C2000C2D200 /* AppDelegate.swift in Sources */,
+				F14D2CFE1D724B09001644CB /* CheckoutViewController.swift in Sources */,
+				F1428A711CFF353B008BD39A /* SandwichViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FA0EC61CE63C2000C2D200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FA0ECF1CE63C2000C2D200 /* DeliDashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FA0ED11CE63C2000C2D200 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FA0EDA1CE63C2000C2D200 /* DeliDashUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1FA0ECC1CE63C2000C2D200 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1FA0EB51CE63C2000C2D200 /* DeliDash */;
+			targetProxy = F1FA0ECB1CE63C2000C2D200 /* PBXContainerItemProxy */;
+		};
+		F1FA0ED71CE63C2000C2D200 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1FA0EB51CE63C2000C2D200 /* DeliDash */;
+			targetProxy = F1FA0ED61CE63C2000C2D200 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1FA0EBD1CE63C2000C2D200 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1FA0EBE1CE63C2000C2D200 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1FA0EC21CE63C2000C2D200 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1FA0EC31CE63C2000C2D200 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1FA0EDC1CE63C2000C2D200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1FA0EDD1CE63C2000C2D200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1FA0EDF1CE63C2000C2D200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DeliDash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hk.DeliDash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1FA0EE01CE63C2000C2D200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DeliDash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hk.DeliDash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F1FA0EE21CE63C2000C2D200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DeliDashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hk.DeliDashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeliDash.app/DeliDash";
+			};
+			name = Debug;
+		};
+		F1FA0EE31CE63C2000C2D200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DeliDashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hk.DeliDashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeliDash.app/DeliDash";
+			};
+			name = Release;
+		};
+		F1FA0EE51CE63C2000C2D200 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DeliDashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hk.DeliDashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DeliDash;
+			};
+			name = Debug;
+		};
+		F1FA0EE61CE63C2000C2D200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DeliDashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hk.DeliDashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DeliDash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1FA0EB11CE63C2000C2D200 /* Build configuration list for PBXProject "DeliDash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FA0EDC1CE63C2000C2D200 /* Debug */,
+				F1FA0EDD1CE63C2000C2D200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1FA0EDE1CE63C2000C2D200 /* Build configuration list for PBXNativeTarget "DeliDash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FA0EDF1CE63C2000C2D200 /* Debug */,
+				F1FA0EE01CE63C2000C2D200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1FA0EE11CE63C2000C2D200 /* Build configuration list for PBXNativeTarget "DeliDashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FA0EE21CE63C2000C2D200 /* Debug */,
+				F1FA0EE31CE63C2000C2D200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1FA0EE41CE63C2000C2D200 /* Build configuration list for PBXNativeTarget "DeliDashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FA0EE51CE63C2000C2D200 /* Debug */,
+				F1FA0EE61CE63C2000C2D200 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1FA0EAE1CE63C2000C2D200 /* Project object */;
+}
