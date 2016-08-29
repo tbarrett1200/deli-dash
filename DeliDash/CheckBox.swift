@@ -8,7 +8,7 @@
 
 import UIKit
 
-class checkBox: UIButton {
+class CheckBox: UIButton {
 
     //images
     let checkedImage = UIImage(named: "checked")
@@ -27,7 +27,7 @@ class checkBox: UIButton {
         }
     }
     override func awakeFromNib() {
-        self.addTarget(self, action: #selector(checkBox.buttonClicked(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        self.addTarget(self, action: #selector(CheckBox.buttonClicked(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             self.isChecked = false
     }
 
