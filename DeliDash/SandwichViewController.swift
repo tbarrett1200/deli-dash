@@ -13,19 +13,13 @@ class SandwichViewController: UIViewController {
 
     //Buttons and their stackviews
     @IBOutlet weak var breadBox: UIStackView!
-    
-    @IBOutlet weak var breadButton: UIButton!
-   
     @IBOutlet weak var toppingsBox: UIStackView!
-    
-    @IBOutlet weak var toppingsButton: UIButton!
-    
     @IBOutlet weak var cheeseBox: UIStackView!
-   
-    @IBOutlet weak var cheeseButton: UIButton!
-    
     @IBOutlet weak var meatBox: UIStackView!
-    
+
+    @IBOutlet weak var breadButton: UIButton!
+    @IBOutlet weak var toppingsButton: UIButton!
+    @IBOutlet weak var cheeseButton: UIButton!
     @IBOutlet weak var meatButton: UIButton!
     
     @IBAction func willCheckout(sender: AnyObject) {
@@ -39,6 +33,15 @@ class SandwichViewController: UIViewController {
         }
     }
     
+    override func viewDidLoad() {
+        for button in [breadButton, toppingsButton, cheeseButton, meatButton] {
+            button.addTarget(self, action: #selector(toppingTypeClicked), forControlEvents: .TouchUpInside)
+        }
+    }
+    
+    func toppingTypeClicked(sender: UIButton) {
+        print("touch")
+    }
     
    //button functions
     @IBAction func breadClicked(sender: AnyObject) {
@@ -122,27 +125,5 @@ class SandwichViewController: UIViewController {
         }
 
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
