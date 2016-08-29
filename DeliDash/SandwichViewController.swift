@@ -30,37 +30,13 @@ class SandwichViewController: UIViewController {
     
     @IBAction func willCheckout(sender: AnyObject) {
 
-        for breadType in breadBox.subviews {
-            if (breadType as! CheckBox).isChecked {
-                Order.foodList.append((breadType as! CheckBox).currentTitle!)
-                
-                
+        for toppingType in [breadBox, toppingsBox,cheeseBox,meatBox] {
+            for topping in toppingType.subviews {
+                if (topping as! CheckBox).isChecked {
+                    Order.foodList.append((topping as! CheckBox).currentTitle!)
+                }
             }
         }
-        for toppingsType in toppingsBox.subviews {
-            if (toppingsType as! CheckBox).isChecked {
-                Order.foodList.append((toppingsType as! CheckBox).currentTitle!)
-                
-                
-            }
-        }
-        for cheeseType in cheeseBox.subviews {
-            if (cheeseType as! CheckBox).isChecked {
-                Order.foodList.append((cheeseType as! CheckBox).currentTitle!)
-                
-                
-            }
-        }
-        for meatType in meatBox.subviews {
-            if (meatType as! CheckBox).isChecked {
-                Order.foodList.append((meatType as! CheckBox).currentTitle!)
-                
-                
-            }
-        }
-
-        Swift.print(Order.foodList)
-        
     }
     
     
