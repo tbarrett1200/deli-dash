@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32EB55721D787E7300EBF968 /* Sandwich.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32EB55711D787E7300EBF968 /* Sandwich.storyboard */; };
+		32EB55741D787F3D00EBF968 /* Salad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32EB55731D787F3D00EBF968 /* Salad.storyboard */; };
 		F1428A6F1CFE64C7008BD39A /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1428A6E1CFE64C7008BD39A /* CheckBox.swift */; };
 		F1428A711CFF353B008BD39A /* SandwichViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1428A701CFF353B008BD39A /* SandwichViewController.swift */; };
 		F14D2CFE1D724B09001644CB /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D2CFD1D724B09001644CB /* CheckoutViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32EB55711D787E7300EBF968 /* Sandwich.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Sandwich.storyboard; path = ../Sandwich.storyboard; sourceTree = "<group>"; };
+		32EB55731D787F3D00EBF968 /* Salad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Salad.storyboard; sourceTree = "<group>"; };
 		F1428A6E1CFE64C7008BD39A /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		F1428A701CFF353B008BD39A /* SandwichViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SandwichViewController.swift; sourceTree = "<group>"; };
 		F14D2CFD1D724B09001644CB /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
@@ -105,9 +109,11 @@
 		F1FA0EB81CE63C2000C2D200 /* DeliDash */ = {
 			isa = PBXGroup;
 			children = (
+				32EB55711D787E7300EBF968 /* Sandwich.storyboard */,
 				F1FA0EB91CE63C2000C2D200 /* AppDelegate.swift */,
 				F1FA0EBB1CE63C2000C2D200 /* ViewController.swift */,
 				F1FA0EBD1CE63C2000C2D200 /* Main.storyboard */,
+				32EB55731D787F3D00EBF968 /* Salad.storyboard */,
 				F14D2CFD1D724B09001644CB /* CheckoutViewController.swift */,
 				F14D2CFF1D7251F8001644CB /* Order.swift */,
 				F1428A701CFF353B008BD39A /* SandwichViewController.swift */,
@@ -244,6 +250,8 @@
 				F1FA0EC41CE63C2000C2D200 /* LaunchScreen.storyboard in Resources */,
 				F1FA0EC11CE63C2000C2D200 /* Assets.xcassets in Resources */,
 				F1FA0EBF1CE63C2000C2D200 /* Main.storyboard in Resources */,
+				32EB55721D787E7300EBF968 /* Sandwich.storyboard in Resources */,
+				32EB55741D787F3D00EBF968 /* Salad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
