@@ -3,8 +3,19 @@ import MessageUI
 
 class CheckoutViewController: UIViewController {
     
-    @IBAction func sendEmail(sender: UIButton) {
+    override func viewDidLoad() {
+        let label = self.view.subviews[0] as! UILabel
         
+        label.text?.appendContentsOf(":\n");
+        for item in Order.foodList {
+            label.text?.appendContentsOf(item + "\n")
+        }
+        
+        print(Order.foodList)
+       
+    }
+    
+    func sendEmail() {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.setSubject("Deli Order")
