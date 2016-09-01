@@ -271,24 +271,6 @@
             </objects>
             <point key="canvasLocation" x="677" y="887"/>
         </scene>
-        <!--Checkout View Controller-->
-        <scene sceneID="aB7-Qv-kdq">
-            <objects>
-                <viewController id="W8U-9b-dR3" customClass="CheckoutViewController" customModule="DeliDash" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zic-fs-cYO"/>
-                        <viewControllerLayoutGuide type="bottom" id="iMR-sn-xJ6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Xhu-sB-Kms">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aT1-Iz-PBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1197" y="527"/>
-        </scene>
     </scenes>
     <resources>
         <image name="bhLogo" width="277" height="154"/>
