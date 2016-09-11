@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6fh-2J-SXN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1362" y="459"/>
+            <point key="canvasLocation" x="1323" y="463.5"/>
         </scene>
         <!--Checkout-->
         <scene sceneID="fWi-kz-Wq5">
@@ -106,14 +106,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1I-Qg-RSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1362" y="804"/>
-        </scene>
-        <!--Choose-->
-        <scene sceneID="PmP-xG-TM3">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Choose" id="Wv2-02-v85" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bpG-ky-aG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1107" y="2580"/>
         </scene>
         <!--CheckOut-->
         <scene sceneID="5Ul-ED-4KN">
@@ -171,7 +163,7 @@
                     <navigationItem key="navigationItem" title="CheckOut" id="4qY-Zj-F8Q">
                         <barButtonItem key="leftBarButtonItem" title="Start Over" id="HQ3-aU-mPi">
                             <connections>
-                                <segue destination="Wv2-02-v85" kind="show" id="W8p-q5-sl1"/>
+                                <action selector="startOver:" destination="AKN-u2-7ar" id="RRb-aI-Zp9"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Send Order" id="7tk-Tm-PcK">
@@ -944,12 +936,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bLp-gT-vGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="550" y="459"/>
+            <point key="canvasLocation" x="499.5" y="489.75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4vs-ji-5Dw">
             <objects>
-                <viewController id="F1o-bY-f8o" customClass="ViewController" customModule="DeliDash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="F1o-bY-f8o" customClass="ViewController" customModule="DeliDash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kYJ-4l-Ocb"/>
                         <viewControllerLayoutGuide type="bottom" id="DtL-A2-Ewr"/>

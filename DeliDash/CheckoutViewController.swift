@@ -20,7 +20,11 @@ class CheckoutViewController: UIViewController, MFMailComposeViewControllerDeleg
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         controller.dismissViewControllerAnimated(true, completion: nil)
     }
-    
+
+    @IBAction func startOver(sender: AnyObject) {
+        
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
     
     @IBAction func saveOrder(sender: UIButton) {
         let data = NSKeyedArchiver.archivedDataWithRootObject(Order.currentOrder)
