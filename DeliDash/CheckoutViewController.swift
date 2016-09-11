@@ -7,18 +7,26 @@ class CheckoutViewController: UIViewController, MFMailComposeViewControllerDeleg
         let label = self.view.subviews[0] as! UILabel
         
         label.text?.appendContentsOf(":\n");
-        for item in Order.foodList {
+        for item in Order.currentOrder.foodList {
             label.text?.appendContentsOf(item + "\n")
         }
         
-        print(Order.foodList)
+        print(Order.currentOrder.foodList)
        
     }
+    
     @IBOutlet weak var foodLabel: UILabel!
     
     func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
         controller.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    
+    @IBAction func saveOrder(sender: UIButton) {
+        let data = NSKeyedArchiver.archivedDataWithRootObject(Order.currentOrder)
+        NSUserDefaults.standardUserDefaults().setObject(data, forKey: "savedOrder")
+    }
+    
     @IBAction func sendMail(sender: AnyObject) {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()

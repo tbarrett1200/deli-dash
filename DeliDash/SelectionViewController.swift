@@ -3,9 +3,9 @@ import UIKit
 class SelectionViewController: UITableViewController {
    
     override func viewDidLoad() {
-        Order.foodType = self.navigationItem.title!
-        print(Order.foodType)
-        Order.foodList.removeAll()
+        Order.currentOrder.foodType = self.navigationItem.title!
+        print(Order.currentOrder.foodType)
+        Order.currentOrder.foodList.removeAll()
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -14,15 +14,15 @@ class SelectionViewController: UITableViewController {
         
         if cell.accessoryType == .None {
             cell.accessoryType = .Checkmark
-            Order.foodList.append(text)
+            Order.currentOrder.foodList.append(text)
         } else {
             cell.accessoryType = .None
-            Order.foodList.removeAtIndex(Order.foodList.indexOf(text)!)
+            Order.currentOrder.foodList.removeAtIndex(Order.currentOrder.foodList.indexOf(text)!)
         }
     }
     
     override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool{
-        if Order.numberOfBreads() == 1 || Order.foodType == "Salad" {
+        if Order.currentOrder.numberOfBreads() == 1 || Order.currentOrder.foodType == "Salad" {
             return true;
         } else {
             let message = "There must be exactly one bread type chosen to complete order"
