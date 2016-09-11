@@ -13,11 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameBox: UITextField!
     
     var nameData: String?
-       @IBAction func button(sender: UIButton) {
+       @IBAction func button(_ sender: UIButton) {
         
         nameData = nameBox.text}
 
-    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool{
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool{
         if nameData != ""
         {
             return true;
