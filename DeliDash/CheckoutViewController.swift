@@ -15,7 +15,7 @@ class CheckoutViewController: UIViewController {
        
     }
     
-    func sendEmail() {
+    @IBAction func sendMail(sender: AnyObject) {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
             mail.setSubject("Deli Order")
