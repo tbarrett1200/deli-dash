@@ -14,12 +14,14 @@ class CheckoutViewController: UIViewController {
         print(Order.foodList)
        
     }
+    @IBOutlet weak var foodLabel: UILabel!
     
     @IBAction func sendMail(sender: AnyObject) {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
+            mail.setToRecipients(["chasandwich@gmail.com"])
             mail.setSubject("Deli Order")
-            mail.setMessageBody("The actual ordering part not set up yet", isHTML: false)
+            mail.setMessageBody(foodLabel.text!, isHTML: false)
             self.presentViewController(mail, animated: true, completion: nil)
         } else {
             let message = "Make sure to set up your email account in the Mail app before continuing"
