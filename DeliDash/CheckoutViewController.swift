@@ -1,7 +1,7 @@
 import UIKit
 import MessageUI
 
-class CheckoutViewController: UIViewController {
+class CheckoutViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     override func viewDidLoad() {
         let label = self.view.subviews[0] as! UILabel
@@ -16,9 +16,13 @@ class CheckoutViewController: UIViewController {
     }
     @IBOutlet weak var foodLabel: UILabel!
     
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
+    }
     @IBAction func sendMail(sender: AnyObject) {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
+            mail.delegate = self as? UINavigationControllerDelegate
             mail.setToRecipients(["chasandwich@gmail.com"])
             mail.setSubject("Deli Order")
             mail.setMessageBody(foodLabel.text!, isHTML: false)
