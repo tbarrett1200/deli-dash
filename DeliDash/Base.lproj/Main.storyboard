@@ -961,7 +961,7 @@
                                 </variation>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7GA-xh-tUy">
-                                <rect key="frame" x="88" y="284" width="144" height="25"/>
+                                <rect key="frame" x="88" y="253" width="144" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7GA-xh-tUy" secondAttribute="height" multiplier="113:25" id="9jI-Mj-lng"/>
                                 </constraints>
@@ -977,6 +977,9 @@
                                         <include reference="9jI-Mj-lng"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="F1o-bY-f8o" id="dMN-fa-lU1"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
