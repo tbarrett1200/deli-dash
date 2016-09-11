@@ -20,48 +20,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sandwichDiagram" translatesAutoresizingMaskIntoConstraints="NO" id="dyi-I3-VYG">
-                                <rect key="frame" x="16" y="164" width="134" height="375"/>
+                                <rect key="frame" x="16" y="133" width="134" height="229"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1h-Fw-zHT">
-                                <rect key="frame" x="170" y="430" width="134" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1h-Fw-zHT">
+                                <rect key="frame" x="170" y="372" width="134" height="41"/>
                                 <state key="normal" title="Salad"/>
                                 <connections>
                                     <segue destination="YdC-fO-tyZ" kind="show" id="u8c-Fo-5Cs"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="saladDiagram" translatesAutoresizingMaskIntoConstraints="NO" id="75g-Vf-nnB">
+                                <rect key="frame" x="170" y="133" width="134" height="231"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAn-ja-udf">
-                                <rect key="frame" x="16" y="559" width="134" height="21"/>
+                                <rect key="frame" x="16" y="370" width="134" height="43"/>
                                 <state key="normal" title="Sandwich"/>
                                 <connections>
                                     <segue destination="ZfZ-fm-sHm" kind="show" id="D37-Og-VDK"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="saladDiagram" translatesAutoresizingMaskIntoConstraints="NO" id="75g-Vf-nnB">
-                                <rect key="frame" x="170" y="155" width="134" height="375"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="leadingMargin" secondItem="kAn-ja-udf" secondAttribute="leading" id="05C-EN-q2y"/>
-                            <constraint firstItem="75g-Vf-nnB" firstAttribute="centerX" secondItem="C1h-Fw-zHT" secondAttribute="centerX" id="CHh-Ob-73V"/>
-                            <constraint firstItem="Ar1-gC-28V" firstAttribute="top" secondItem="kAn-ja-udf" secondAttribute="bottom" constant="20" id="HXS-97-hVX"/>
-                            <constraint firstItem="C1h-Fw-zHT" firstAttribute="top" secondItem="75g-Vf-nnB" secondAttribute="bottom" constant="20" id="ISf-gE-E04"/>
-                            <constraint firstItem="C1h-Fw-zHT" firstAttribute="leading" secondItem="kAn-ja-udf" secondAttribute="trailing" constant="20" id="IXE-Bk-sMM"/>
-                            <constraint firstItem="dyi-I3-VYG" firstAttribute="top" secondItem="6TJ-UO-pJY" secondAttribute="bottom" constant="100" id="JkT-zS-jyy"/>
+                            <constraint firstItem="dyi-I3-VYG" firstAttribute="leading" secondItem="Gxv-lX-60p" secondAttribute="leadingMargin" constant="-4" id="4sN-Qg-WDe"/>
+                            <constraint firstItem="kAn-ja-udf" firstAttribute="centerX" secondItem="dyi-I3-VYG" secondAttribute="centerX" id="8Ea-Uh-85x"/>
+                            <constraint firstItem="Ar1-gC-28V" firstAttribute="top" secondItem="kAn-ja-udf" secondAttribute="bottom" constant="67" id="IOC-Bo-ZoN"/>
+                            <constraint firstItem="75g-Vf-nnB" firstAttribute="top" secondItem="6TJ-UO-pJY" secondAttribute="bottom" constant="69" id="LBY-O7-cpY"/>
+                            <constraint firstItem="C1h-Fw-zHT" firstAttribute="top" secondItem="75g-Vf-nnB" secondAttribute="bottom" constant="8" id="LaZ-5v-st4"/>
+                            <constraint firstItem="C1h-Fw-zHT" firstAttribute="centerX" secondItem="75g-Vf-nnB" secondAttribute="centerX" id="MJW-3q-gQT"/>
                             <constraint firstAttribute="leadingMargin" secondItem="kAn-ja-udf" secondAttribute="leading" id="MUR-ea-khf"/>
-                            <constraint firstItem="75g-Vf-nnB" firstAttribute="leading" secondItem="C1h-Fw-zHT" secondAttribute="leading" id="RJr-2u-XUM"/>
-                            <constraint firstItem="75g-Vf-nnB" firstAttribute="height" secondItem="dyi-I3-VYG" secondAttribute="height" id="Ue6-YY-tfZ"/>
-                            <constraint firstItem="kAn-ja-udf" firstAttribute="top" secondItem="dyi-I3-VYG" secondAttribute="bottom" constant="20" id="UlF-o3-nE4"/>
-                            <constraint firstItem="dyi-I3-VYG" firstAttribute="leading" secondItem="kAn-ja-udf" secondAttribute="leading" id="Vyp-mS-vaW"/>
-                            <constraint firstItem="dyi-I3-VYG" firstAttribute="centerX" secondItem="kAn-ja-udf" secondAttribute="centerX" id="XQ6-vK-ltU"/>
-                            <constraint firstItem="kAn-ja-udf" firstAttribute="width" secondItem="C1h-Fw-zHT" secondAttribute="width" id="eg6-CB-Srl"/>
-                            <constraint firstItem="dyi-I3-VYG" firstAttribute="centerX" secondItem="kAn-ja-udf" secondAttribute="centerX" id="jTZ-sG-Eky"/>
-                            <constraint firstItem="75g-Vf-nnB" firstAttribute="trailing" secondItem="C1h-Fw-zHT" secondAttribute="trailing" id="k5P-nR-m6Q"/>
-                            <constraint firstItem="dyi-I3-VYG" firstAttribute="trailing" secondItem="kAn-ja-udf" secondAttribute="trailing" id="lw8-sp-ZTF"/>
-                            <constraint firstItem="Ar1-gC-28V" firstAttribute="top" secondItem="C1h-Fw-zHT" secondAttribute="bottom" constant="20" id="ntq-Mk-QKe"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="C1h-Fw-zHT" secondAttribute="trailing" id="oCy-i3-4ar"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="75g-Vf-nnB" secondAttribute="trailing" constant="-4" id="V4N-Bj-Ocd"/>
+                            <constraint firstItem="75g-Vf-nnB" firstAttribute="leading" secondItem="dyi-I3-VYG" secondAttribute="trailing" constant="20" id="Vak-8A-0Ua"/>
+                            <constraint firstItem="Ar1-gC-28V" firstAttribute="top" secondItem="C1h-Fw-zHT" secondAttribute="bottom" constant="67" id="ZGd-m6-EMj"/>
+                            <constraint firstItem="75g-Vf-nnB" firstAttribute="centerY" secondItem="Gxv-lX-60p" secondAttribute="centerY" id="bHF-3U-Mwr"/>
+                            <constraint firstItem="dyi-I3-VYG" firstAttribute="top" secondItem="6TJ-UO-pJY" secondAttribute="bottom" constant="69" id="d0f-6P-aeJ"/>
+                            <constraint firstItem="kAn-ja-udf" firstAttribute="top" secondItem="dyi-I3-VYG" secondAttribute="bottom" constant="8" id="i5k-qw-djL"/>
+                            <constraint firstItem="dyi-I3-VYG" firstAttribute="width" secondItem="75g-Vf-nnB" secondAttribute="width" id="kpe-du-Qfr"/>
                             <constraint firstItem="dyi-I3-VYG" firstAttribute="top" secondItem="6TJ-UO-pJY" secondAttribute="bottom" constant="100" id="sff-ks-yW7"/>
-                            <constraint firstItem="dyi-I3-VYG" firstAttribute="height" secondItem="75g-Vf-nnB" secondAttribute="height" id="tLf-gt-Pqm"/>
+                            <constraint firstItem="dyi-I3-VYG" firstAttribute="centerY" secondItem="Gxv-lX-60p" secondAttribute="centerY" id="uen-er-F1t"/>
+                            <constraint firstItem="75g-Vf-nnB" firstAttribute="centerY" secondItem="Gxv-lX-60p" secondAttribute="centerY" id="wIu-6D-e9r"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -78,6 +75,14 @@
             </objects>
             <point key="canvasLocation" x="1362" y="459"/>
         </scene>
+        <!--Choose-->
+        <scene sceneID="PmP-xG-TM3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="Choose" id="Wv2-02-v85" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpG-ky-aG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="1953"/>
+        </scene>
         <!--CheckOut-->
         <scene sceneID="5Ul-ED-4KN">
             <objects>
@@ -90,8 +95,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Order" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qv7-pk-IGp">
-                                <rect key="frame" x="20" y="87" width="531" height="493"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Order" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qv7-pk-IGp">
+                                <rect key="frame" x="37" y="75" width="247" height="385"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -100,13 +105,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="CheckOut" id="4qY-Zj-F8Q">
-                        <barButtonItem key="leftBarButtonItem" title="Start Over" id="HQ3-aU-mPi"/>
+                        <barButtonItem key="leftBarButtonItem" title="Start Over" id="HQ3-aU-mPi">
+                            <connections>
+                                <segue destination="Wv2-02-v85" kind="show" id="W8p-q5-sl1"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Send Order" id="7tk-Tm-PcK">
                             <connections>
                                 <action selector="sendMail:" destination="AKN-u2-7ar" id="EJm-tl-j0u"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="foodLabel" destination="Qv7-pk-IGp" id="WzQ-53-7K7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Kl-cM-LYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
