@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MenuViewController: UIViewController {
    
     @IBOutlet weak var nameBox: UITextField!
     

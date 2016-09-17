@@ -1,14 +1,11 @@
-//
-//  AppDelegate.swift
-//  DeliDash
-//
-//  Created by Alexander Leininger on 5/13/16.
-//  Copyright © 2016 Alexander Leininger and Thomas Barrett. All rights reserved.
-//
+//File: AppDelegate.swift
+//Created: 5/13/16
+//Main Application Class
 
 import UIKit
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
