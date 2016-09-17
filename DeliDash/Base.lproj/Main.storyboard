@@ -120,7 +120,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Order" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qv7-pk-IGp">
-                                <frame key="frameInset" minX="92" minY="120" width="260" height="385"/>
+                                <frame key="frameInset" minX="77" minY="176" width="260" height="385"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1039,6 +1039,7 @@
                         <constraints>
                             <constraint firstItem="cbC-f7-MRW" firstAttribute="centerX" secondItem="P7q-kc-geV" secondAttribute="centerX" id="3cG-Xp-kQ9"/>
                             <constraint firstItem="fBx-Ir-8nx" firstAttribute="top" secondItem="jXn-Yu-pNT" secondAttribute="bottom" constant="83" id="4V2-Si-ffc"/>
+                            <constraint firstItem="cbC-f7-MRW" firstAttribute="top" secondItem="eFU-t9-iQR" secondAttribute="bottom" constant="20" id="B5g-7F-iRH"/>
                             <constraint firstItem="eFU-t9-iQR" firstAttribute="top" secondItem="kYJ-4l-Ocb" secondAttribute="bottom" constant="1" id="DKh-na-oMe"/>
                             <constraint firstItem="jXn-Yu-pNT" firstAttribute="centerY" secondItem="P7q-kc-geV" secondAttribute="centerY" id="KTQ-3Y-qQk"/>
                             <constraint firstItem="eFU-t9-iQR" firstAttribute="centerX" secondItem="P7q-kc-geV" secondAttribute="centerX" id="Mgh-0n-EgZ"/>
@@ -1051,30 +1052,30 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="TXO-he-J4B"/>
-                                <exclude reference="mpX-wR-hfD"/>
-                                <exclude reference="3cG-Xp-kQ9"/>
                                 <exclude reference="Mgh-0n-EgZ"/>
-                                <exclude reference="4V2-Si-ffc"/>
-                                <exclude reference="jfb-ow-1XE"/>
+                                <exclude reference="3cG-Xp-kQ9"/>
                                 <exclude reference="KTQ-3Y-qQk"/>
                                 <exclude reference="Q6G-FO-Nbo"/>
                                 <exclude reference="R1f-JG-XXn"/>
                                 <exclude reference="khx-0s-kYe"/>
+                                <exclude reference="TXO-he-J4B"/>
+                                <exclude reference="mpX-wR-hfD"/>
+                                <exclude reference="4V2-Si-ffc"/>
+                                <exclude reference="jfb-ow-1XE"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="TXO-he-J4B"/>
-                                <include reference="mpX-wR-hfD"/>
-                                <include reference="3cG-Xp-kQ9"/>
                                 <include reference="Mgh-0n-EgZ"/>
-                                <include reference="4V2-Si-ffc"/>
-                                <include reference="jfb-ow-1XE"/>
+                                <include reference="3cG-Xp-kQ9"/>
                                 <include reference="KTQ-3Y-qQk"/>
                                 <include reference="Q6G-FO-Nbo"/>
                                 <include reference="R1f-JG-XXn"/>
                                 <include reference="khx-0s-kYe"/>
+                                <include reference="TXO-he-J4B"/>
+                                <include reference="mpX-wR-hfD"/>
+                                <include reference="4V2-Si-ffc"/>
+                                <include reference="jfb-ow-1XE"/>
                             </mask>
                         </variation>
                     </view>
@@ -1088,7 +1089,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bhLogo" width="277" height="154"/>
+        <image name="bhLogo" width="200" height="178"/>
         <image name="saladDiagram" width="173" height="375"/>
         <image name="sandwichDiagram" width="278" height="800"/>
     </resources>
