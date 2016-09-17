@@ -31,11 +31,16 @@ class CheckoutViewController: UIViewController, MFMailComposeViewControllerDeleg
         UserDefaults.standard.set(data, forKey: "savedOrder")
     }
     
+    
+    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+        controller.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func sendMail(_ sender: AnyObject) {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()
-            mail.delegate = self as? UINavigationControllerDelegate
-            mail.setToRecipients(["chasandwich@gmail.com"])
+            mail.mailComposeDelegate = self
+            mail.setToRecipients([/*"chasandwich@gmail.com"*/"tbarrett1200@icloud.com"])
             mail.setSubject("Deli Order")
             mail.setMessageBody(foodLabel.text!, isHTML: false)
             self.present(mail, animated: true, completion: nil)
