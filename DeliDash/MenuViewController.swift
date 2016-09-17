@@ -20,7 +20,20 @@ class MenuViewController: UIViewController {
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool{
         if nameData != ""
         {
-            return true;
+            let date = Date()
+            let calendar = NSCalendar.current
+            let components = calendar.dateComponents([.hour,.minute], from: date)
+            if components.hour! >= 5 && components.hour!<10
+            {
+                return true
+            } else {
+                let message = "Try again between the hours of 5:00 AM and 10 AM"
+                let alertController = UIAlertController(title: "A Sandwich Cannot Be Ordered At This Time", message: message, preferredStyle: .alert)
+                let continueAction = UIAlertAction(title: "Continue", style: .default, handler: nil)
+                alertController.addAction(continueAction)
+                self.present(alertController, animated: true, completion: nil)
+                return false
+            }
         }
         return false;
     }

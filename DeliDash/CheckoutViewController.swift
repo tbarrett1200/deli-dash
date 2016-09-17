@@ -27,8 +27,11 @@ class CheckoutViewController: UIViewController, MFMailComposeViewControllerDeleg
     }
     
     @IBAction func saveOrder(_ sender: UIButton) {
-        let data = NSKeyedArchiver.archivedData(withRootObject: Order.currentOrder)
-        UserDefaults.standard.set(data, forKey: "savedOrder")
+        Order.saveSandwich()
+        let alertController = UIAlertController(title: "Your Order Has Been Saved", message: nil, preferredStyle: .alert)
+        let continueAction = UIAlertAction(title: "Continue", style: .default, handler: nil)
+        alertController.addAction(continueAction)
+        self.present(alertController, animated: true, completion: nil)
     }
     
     
@@ -37,7 +40,15 @@ class CheckoutViewController: UIViewController, MFMailComposeViewControllerDeleg
     }
     
     @IBAction func sendMail(_ sender: AnyObject) {
+        
+      
+        
         if MFMailComposeViewController.canSendMail() {
+            let message = "Make sure to send the email with your school provided account. Otherwise, your order will not be processed"
+            let alertController = UIAlertController(title: "Warning", message: message, preferredStyle: .alert)
+            let continueAction = UIAlertAction(title: "Continue", style: .default, handler: nil)
+            alertController.addAction(continueAction)
+            self.present(alertController, animated: true, completion: nil)
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
             mail.setToRecipients([/*"chasandwich@gmail.com"*/"tbarrett1200@icloud.com"])

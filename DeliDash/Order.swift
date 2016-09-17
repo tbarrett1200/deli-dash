@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 class Order: NSObject, NSCoding {
     
@@ -13,9 +14,21 @@ class Order: NSObject, NSCoding {
         super.init()
     }
     
-    static func loadSandwich() {
-        let data = UserDefaults.standard.object(forKey: "savedOrder") as! Data
-        Order.currentOrder = NSKeyedUnarchiver.unarchiveObject(with: data) as! Order
+    static func loadSandwich(view: UIViewController) {
+        if let data = UserDefaults.standard.object(forKey: "savedOrder") {
+            Order.currentOrder = NSKeyedUnarchiver.unarchiveObject(with: data as! Data) as! Order
+
+        } else {
+            let alertController = UIAlertController(title: "No Order Has Been Saved", message: nil, preferredStyle: .alert)
+            let continueAction = UIAlertAction(title: "Continue", style: .default, handler: nil)
+            alertController.addAction(continueAction)
+            view.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
+    static func saveSandwich() {
+        let data = NSKeyedArchiver.archivedData(withRootObject: Order.currentOrder)
+        UserDefaults.standard.set(data, forKey: "savedOrder")
     }
     
     required init?(coder aDecoder: NSCoder) {

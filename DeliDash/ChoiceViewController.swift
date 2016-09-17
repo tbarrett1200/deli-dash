@@ -15,7 +15,7 @@ class ChoiceViewController: UIViewController {
     }
 
     @IBAction func loadOrder(_ sender: UIButton) {
-        Order.loadSandwich()
+        Order.loadSandwich(view: self)
     }
     
     override func didReceiveMemoryWarning() {
