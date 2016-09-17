@@ -14,21 +14,21 @@ class Order: NSObject, NSCoding {
     }
     
     static func loadSandwich() {
-        let data = NSUserDefaults.standardUserDefaults().objectForKey("savedOrder") as! NSData
-        Order.currentOrder = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! Order
+        let data = UserDefaults.standard.object(forKey: "savedOrder") as! Data
+        Order.currentOrder = NSKeyedUnarchiver.unarchiveObject(with: data) as! Order
     }
     
     required init?(coder aDecoder: NSCoder) {
-        foodType = aDecoder.decodeObjectForKey("foodType") as! String
-        foodList = aDecoder.decodeObjectForKey("foodList") as! [String]
+        foodType = aDecoder.decodeObject(forKey: "foodType") as! String
+        foodList = aDecoder.decodeObject(forKey: "foodList") as! [String]
         super.init()
         Order.currentOrder = self
     }
 
-    func encodeWithCoder(aCoder: NSCoder) {
+    func encode(with aCoder: NSCoder) {
         
-        aCoder.encodeObject(foodType, forKey: "foodType")
-        aCoder.encodeObject(foodList, forKey: "foodList")
+        aCoder.encode(foodType, forKey: "foodType")
+        aCoder.encode(foodList, forKey: "foodList")
         
     }
     

@@ -14,7 +14,7 @@ class ChoiceViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    @IBAction func loadOrder(sender: UIButton) {
+    @IBAction func loadOrder(_ sender: UIButton) {
         Order.loadSandwich()
     }
     

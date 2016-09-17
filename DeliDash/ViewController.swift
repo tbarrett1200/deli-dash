@@ -13,11 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var nameBox: UITextField!
     
     var nameData: String?
-       @IBAction func button(sender: UIButton) {
+       @IBAction func button(_ sender: UIButton) {
         
         nameData = nameBox.text}
 
-    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject?) -> Bool{
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool{
         if nameData != ""
         {
             return true;
@@ -29,9 +29,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
-        super.touchesBegan(touches, withEvent: event)
+        super.touchesBegan(touches, with: event)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
