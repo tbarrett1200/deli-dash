@@ -12,7 +12,7 @@ class CheckoutViewController: UIViewController, MFMailComposeViewControllerDeleg
         }
         
         print(Order.currentOrder.foodList)
-       
+        
     }
     
     @IBOutlet weak var foodLabel: UILabel!
@@ -20,7 +20,7 @@ class CheckoutViewController: UIViewController, MFMailComposeViewControllerDeleg
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
     }
-
+    
     @IBAction func startOver(_ sender: AnyObject) {
         
         let _ = self.navigationController?.popToRootViewController(animated: true)
@@ -41,14 +41,9 @@ class CheckoutViewController: UIViewController, MFMailComposeViewControllerDeleg
     
     @IBAction func sendMail(_ sender: AnyObject) {
         
-      
+        
         
         if MFMailComposeViewController.canSendMail() {
-            let message = "Make sure to send the email with your school provided account. Otherwise, your order will not be processed"
-            let alertController = UIAlertController(title: "Warning", message: message, preferredStyle: .alert)
-            let continueAction = UIAlertAction(title: "Continue", style: .default, handler: nil)
-            alertController.addAction(continueAction)
-            self.present(alertController, animated: true, completion: nil)
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
             mail.setToRecipients(["chasandwich@gmail.com"])
@@ -63,5 +58,5 @@ class CheckoutViewController: UIViewController, MFMailComposeViewControllerDeleg
             self.present(alertController, animated: true, completion: nil)
         }
     }
-
+    
 }
