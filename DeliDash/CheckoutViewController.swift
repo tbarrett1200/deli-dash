@@ -51,7 +51,7 @@ class CheckoutViewController: UIViewController, MFMailComposeViewControllerDeleg
             self.present(alertController, animated: true, completion: nil)
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
-            mail.setToRecipients([/*"chasandwich@gmail.com"*/"tbarrett1200@icloud.com"])
+            mail.setToRecipients(["chasandwich@gmail.com"])
             mail.setSubject("Deli Order")
             mail.setMessageBody(foodLabel.text!, isHTML: false)
             self.present(mail, animated: true, completion: nil)
