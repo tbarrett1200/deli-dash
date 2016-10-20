@@ -104,14 +104,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Order" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qv7-pk-IGp">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WARNING: You must use your school email to place an order" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4T-g4-a4h">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WARNING: Make sure you're signed into your school account  on the mail app" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4T-g4-a4h">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="293" id="Gcj-nd-yhD"/>
-                                    <constraint firstAttribute="height" constant="40" id="eeL-Uv-NEb"/>
+                                    <constraint firstAttribute="height" constant="46" id="vGa-wU-FOL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
@@ -132,8 +132,8 @@
                                 <exclude reference="Fy1-ht-gnH"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Yd2-60-t47"/>
                                 <exclude reference="t3X-RS-YGt"/>
+                                <exclude reference="Yd2-60-t47"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -141,8 +141,8 @@
                                 <include reference="Fy1-ht-gnH"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Yd2-60-t47"/>
                                 <include reference="t3X-RS-YGt"/>
+                                <include reference="Yd2-60-t47"/>
                             </mask>
                         </variation>
                     </view>
