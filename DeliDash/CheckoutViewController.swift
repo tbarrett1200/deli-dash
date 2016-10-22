@@ -47,8 +47,8 @@ class CheckoutViewController: UIViewController, MFMailComposeViewControllerDeleg
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
             mail.setToRecipients(["chasandwich@gmail.com"])
-            mail.setSubject("Deli Order")
-            mail.setMessageBody(foodLabel.text!, isHTML: false)
+            mail.setSubject("Deli Order from") //NEED TO ADD NAME ID
+            mail.setMessageBody(foodLabel.text!, isHTML: false)//ALSO ADD A "THANK" AT the End of this email
             self.present(mail, animated: true, completion: nil)
         } else {
             let message = "Make sure to set up your email account in the Mail app before continuing"
