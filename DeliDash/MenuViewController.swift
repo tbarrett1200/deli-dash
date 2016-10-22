@@ -12,13 +12,13 @@ class MenuViewController: UIViewController {
    
     @IBOutlet weak var nameBox: UITextField!
     
-    var nameData: String?
+    static var nameData: String?
        @IBAction func button(_ sender: UIButton) {
         
-        nameData = nameBox.text}
+        MenuViewController.nameData = nameBox.text}
 
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool{
-        if nameData != ""
+        if MenuViewController.nameData != ""
         {
             let date = Date()
             let calendar = NSCalendar.current
