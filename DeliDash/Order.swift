@@ -5,19 +5,23 @@ class Order: NSObject, NSCoding {
     
     static var currentOrder:Order = Order()
     
-    var foodType:String
-    var foodList:[String]
+    var bread:String
+    var meat:[String]
+    var cheese:[String]
+    var toppings:[String]
     
+    //initiates class
     override init() {
-        foodType = ""
-        foodList = []
-        super.init()
+        bread = ""
+        meat = []
+        cheese = []
+        toppings = []
     }
     
+    //loads sandwich from user defaults
     static func loadSandwich(view: UIViewController) {
-        if let data = UserDefaults.standard.object(forKey: "savedOrder") {
+        if let data = UserDefaults.standard.object(forKey: "order") {
             Order.currentOrder = NSKeyedUnarchiver.unarchiveObject(with: data as! Data) as! Order
-
         } else {
             let alertController = UIAlertController(title: "No Order Has Been Saved", message: nil, preferredStyle: .alert)
             let continueAction = UIAlertAction(title: "Continue", style: .default, handler: nil)
@@ -26,37 +30,30 @@ class Order: NSObject, NSCoding {
         }
     }
     
+    //saves current order to user defaults
     static func saveSandwich() {
         let data = NSKeyedArchiver.archivedData(withRootObject: Order.currentOrder)
-        UserDefaults.standard.set(data, forKey: "savedOrder")
+        UserDefaults.standard.set(data, forKey: "order")
     }
     
+    //decodes class
     required init?(coder aDecoder: NSCoder) {
-        foodType = aDecoder.decodeObject(forKey: "foodType") as! String
-        foodList = aDecoder.decodeObject(forKey: "foodList") as! [String]
+        bread = aDecoder.decodeObject(forKey: "Bread") as! String
+        meat = aDecoder.decodeObject(forKey: "Meat") as! [String]
+        cheese = aDecoder.decodeObject(forKey: "Chese") as! [String]
+        toppings = aDecoder.decodeObject(forKey: "Toppings") as! [String]
         super.init()
         Order.currentOrder = self
     }
 
+    //encodes class
     func encode(with aCoder: NSCoder) {
-        
-        aCoder.encode(foodType, forKey: "foodType")
-        aCoder.encode(foodList, forKey: "foodList")
-        
+        aCoder.encode(bread, forKey: "Bread")
+        aCoder.encode(meat, forKey: "Meat")
+        aCoder.encode(cheese, forKey: "Cheese")
+        aCoder.encode(toppings, forKey: "Toppings")
     }
     
-    func numberOfBreads() -> Int {
-        
-        var breadCount = 0
-        
-        for breadType in ["Sub Roll","Kaiser Roll","Rye","Wheat","Wrap","Ciabatta"] {
-            if foodList.contains(breadType) {
-                breadCount = breadCount + 1
-            }
-        }
-        
-        return breadCount;
-    }
 }
     
     

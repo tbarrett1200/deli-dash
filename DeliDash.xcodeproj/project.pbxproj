@@ -7,56 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		323CB2601D860384005E4E33 /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323CB25F1D860384005E4E33 /* ChoiceViewController.swift */; };
-		F1428A6F1CFE64C7008BD39A /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1428A6E1CFE64C7008BD39A /* CheckBox.swift */; };
-		F1428A711CFF353B008BD39A /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1428A701CFF353B008BD39A /* SelectionViewController.swift */; };
-		F14D2CFE1D724B09001644CB /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D2CFD1D724B09001644CB /* CheckoutViewController.swift */; };
-		F14D2D001D7251F8001644CB /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14D2CFF1D7251F8001644CB /* Order.swift */; };
-		F1FA0EBA1CE63C2000C2D200 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA0EB91CE63C2000C2D200 /* AppDelegate.swift */; };
-		F1FA0EBC1CE63C2000C2D200 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA0EBB1CE63C2000C2D200 /* MenuViewController.swift */; };
-		F1FA0EBF1CE63C2000C2D200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FA0EBD1CE63C2000C2D200 /* Main.storyboard */; };
-		F1FA0EC11CE63C2000C2D200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FA0EC01CE63C2000C2D200 /* Assets.xcassets */; };
-		F1FA0EC41CE63C2000C2D200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1FA0EC21CE63C2000C2D200 /* LaunchScreen.storyboard */; };
-		F1FA0ECF1CE63C2000C2D200 /* DeliDashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA0ECE1CE63C2000C2D200 /* DeliDashTests.swift */; };
-		F1FA0EDA1CE63C2000C2D200 /* DeliDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FA0ED91CE63C2000C2D200 /* DeliDashUITests.swift */; };
+		32F3C7001DC6CAD600AB39B0 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F3C6F81DC6CAD600AB39B0 /* FirebaseAnalytics.framework */; };
+		32F3C7011DC6CAD600AB39B0 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F3C6F91DC6CAD600AB39B0 /* FirebaseCore.framework */; };
+		32F3C7021DC6CAD600AB39B0 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F3C6FA1DC6CAD600AB39B0 /* FirebaseDatabase.framework */; };
+		32F3C7031DC6CAD600AB39B0 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F3C6FB1DC6CAD600AB39B0 /* FirebaseInstanceID.framework */; };
+		32F3C7041DC6CAD600AB39B0 /* GoogleInterchangeUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F3C6FC1DC6CAD600AB39B0 /* GoogleInterchangeUtilities.framework */; };
+		32F3C7051DC6CAD600AB39B0 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F3C6FD1DC6CAD600AB39B0 /* GoogleSymbolUtilities.framework */; };
+		32F3C7061DC6CAD600AB39B0 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32F3C6FE1DC6CAD600AB39B0 /* GoogleToolboxForMac.framework */; };
+		32F3C7171DC6CBDD00AB39B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3C70C1DC6CBDD00AB39B0 /* AppDelegate.swift */; };
+		32F3C7181DC6CBDD00AB39B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32F3C70D1DC6CBDD00AB39B0 /* Assets.xcassets */; };
+		32F3C7191DC6CBDD00AB39B0 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3C70E1DC6CBDD00AB39B0 /* CheckoutViewController.swift */; };
+		32F3C71A1DC6CBDD00AB39B0 /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3C70F1DC6CBDD00AB39B0 /* ChoiceViewController.swift */; };
+		32F3C71B1DC6CBDD00AB39B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32F3C7101DC6CBDD00AB39B0 /* GoogleService-Info.plist */; };
+		32F3C71C1DC6CBDD00AB39B0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32F3C7111DC6CBDD00AB39B0 /* Info.plist */; };
+		32F3C71D1DC6CBDD00AB39B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F3C7121DC6CBDD00AB39B0 /* LaunchScreen.storyboard */; };
+		32F3C71E1DC6CBDD00AB39B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F3C7131DC6CBDD00AB39B0 /* Main.storyboard */; };
+		32F3C71F1DC6CBDD00AB39B0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3C7141DC6CBDD00AB39B0 /* MenuViewController.swift */; };
+		32F3C7201DC6CBDD00AB39B0 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3C7151DC6CBDD00AB39B0 /* Order.swift */; };
+		32F3C7211DC6CBDD00AB39B0 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3C7161DC6CBDD00AB39B0 /* SelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F1FA0ECB1CE63C2000C2D200 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F1FA0EAE1CE63C2000C2D200 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F1FA0EB51CE63C2000C2D200;
-			remoteInfo = DeliDash;
-		};
-		F1FA0ED61CE63C2000C2D200 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F1FA0EAE1CE63C2000C2D200 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F1FA0EB51CE63C2000C2D200;
-			remoteInfo = DeliDash;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		323CB25F1D860384005E4E33 /* ChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
-		F1428A6E1CFE64C7008BD39A /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
-		F1428A701CFF353B008BD39A /* SelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
-		F14D2CFD1D724B09001644CB /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
-		F14D2CFF1D7251F8001644CB /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		32F3C6F71DC6CAD600AB39B0 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Firebase/Firebase.h; sourceTree = "<group>"; };
+		32F3C6F81DC6CAD600AB39B0 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Firebase/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		32F3C6F91DC6CAD600AB39B0 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Firebase/FirebaseCore.framework; sourceTree = "<group>"; };
+		32F3C6FA1DC6CAD600AB39B0 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Firebase/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		32F3C6FB1DC6CAD600AB39B0 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Firebase/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		32F3C6FC1DC6CAD600AB39B0 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Firebase/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		32F3C6FD1DC6CAD600AB39B0 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Firebase/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		32F3C6FE1DC6CAD600AB39B0 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleToolboxForMac.framework; path = Firebase/GoogleToolboxForMac.framework; sourceTree = "<group>"; };
+		32F3C6FF1DC6CAD600AB39B0 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = Firebase/module.modulemap; sourceTree = "<group>"; };
+		32F3C7091DC6CB4400AB39B0 /* DeliDash-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeliDash-Bridging-Header.h"; sourceTree = "<group>"; };
+		32F3C70C1DC6CBDD00AB39B0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32F3C70D1DC6CBDD00AB39B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32F3C70E1DC6CBDD00AB39B0 /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		32F3C70F1DC6CBDD00AB39B0 /* ChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		32F3C7101DC6CBDD00AB39B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		32F3C7111DC6CBDD00AB39B0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32F3C7121DC6CBDD00AB39B0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32F3C7131DC6CBDD00AB39B0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		32F3C7141DC6CBDD00AB39B0 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		32F3C7151DC6CBDD00AB39B0 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		32F3C7161DC6CBDD00AB39B0 /* SelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		F1FA0EB61CE63C2000C2D200 /* DeliDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1FA0EB91CE63C2000C2D200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1FA0EBB1CE63C2000C2D200 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		F1FA0EBE1CE63C2000C2D200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F1FA0EC01CE63C2000C2D200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F1FA0EC31CE63C2000C2D200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F1FA0EC51CE63C2000C2D200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1FA0ECA1CE63C2000C2D200 /* DeliDashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliDashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1FA0ECE1CE63C2000C2D200 /* DeliDashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliDashTests.swift; sourceTree = "<group>"; };
-		F1FA0ED01CE63C2000C2D200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F1FA0ED51CE63C2000C2D200 /* DeliDashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeliDashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1FA0ED91CE63C2000C2D200 /* DeliDashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliDashUITests.swift; sourceTree = "<group>"; };
-		F1FA0EDB1CE63C2000C2D200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,33 +57,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F1FA0EC71CE63C2000C2D200 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F1FA0ED21CE63C2000C2D200 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				32F3C7061DC6CAD600AB39B0 /* GoogleToolboxForMac.framework in Frameworks */,
+				32F3C7051DC6CAD600AB39B0 /* GoogleSymbolUtilities.framework in Frameworks */,
+				32F3C7021DC6CAD600AB39B0 /* FirebaseDatabase.framework in Frameworks */,
+				32F3C7011DC6CAD600AB39B0 /* FirebaseCore.framework in Frameworks */,
+				32F3C7001DC6CAD600AB39B0 /* FirebaseAnalytics.framework in Frameworks */,
+				32F3C7031DC6CAD600AB39B0 /* FirebaseInstanceID.framework in Frameworks */,
+				32F3C7041DC6CAD600AB39B0 /* GoogleInterchangeUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32F3C7081DC6CAE100AB39B0 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				32F3C6F71DC6CAD600AB39B0 /* Firebase.h */,
+				32F3C6F81DC6CAD600AB39B0 /* FirebaseAnalytics.framework */,
+				32F3C6F91DC6CAD600AB39B0 /* FirebaseCore.framework */,
+				32F3C6FA1DC6CAD600AB39B0 /* FirebaseDatabase.framework */,
+				32F3C6FB1DC6CAD600AB39B0 /* FirebaseInstanceID.framework */,
+				32F3C6FC1DC6CAD600AB39B0 /* GoogleInterchangeUtilities.framework */,
+				32F3C6FD1DC6CAD600AB39B0 /* GoogleSymbolUtilities.framework */,
+				32F3C6FE1DC6CAD600AB39B0 /* GoogleToolboxForMac.framework */,
+				32F3C6FF1DC6CAD600AB39B0 /* module.modulemap */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
 		F1FA0EAD1CE63C2000C2D200 = {
 			isa = PBXGroup;
 			children = (
+				32F3C7081DC6CAE100AB39B0 /* Firebase */,
 				F1FA0EB81CE63C2000C2D200 /* DeliDash */,
-				F1FA0ECD1CE63C2000C2D200 /* DeliDashTests */,
-				F1FA0ED81CE63C2000C2D200 /* DeliDashUITests */,
 				F1FA0EB71CE63C2000C2D200 /* Products */,
+				32F3C7091DC6CB4400AB39B0 /* DeliDash-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				F1FA0EB61CE63C2000C2D200 /* DeliDash.app */,
-				F1FA0ECA1CE63C2000C2D200 /* DeliDashTests.xctest */,
-				F1FA0ED51CE63C2000C2D200 /* DeliDashUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,39 +107,21 @@
 		F1FA0EB81CE63C2000C2D200 /* DeliDash */ = {
 			isa = PBXGroup;
 			children = (
-				F1FA0EB91CE63C2000C2D200 /* AppDelegate.swift */,
-				F1FA0EBB1CE63C2000C2D200 /* MenuViewController.swift */,
-				F1FA0EBD1CE63C2000C2D200 /* Main.storyboard */,
-				323CB25F1D860384005E4E33 /* ChoiceViewController.swift */,
-				F14D2CFD1D724B09001644CB /* CheckoutViewController.swift */,
-				F14D2CFF1D7251F8001644CB /* Order.swift */,
-				F1428A701CFF353B008BD39A /* SelectionViewController.swift */,
-				F1428A6E1CFE64C7008BD39A /* CheckBox.swift */,
-				F1FA0EC01CE63C2000C2D200 /* Assets.xcassets */,
-				F1FA0EC21CE63C2000C2D200 /* LaunchScreen.storyboard */,
-				F1FA0EC51CE63C2000C2D200 /* Info.plist */,
+				32F3C70C1DC6CBDD00AB39B0 /* AppDelegate.swift */,
+				32F3C70D1DC6CBDD00AB39B0 /* Assets.xcassets */,
+				32F3C70E1DC6CBDD00AB39B0 /* CheckoutViewController.swift */,
+				32F3C70F1DC6CBDD00AB39B0 /* ChoiceViewController.swift */,
+				32F3C7101DC6CBDD00AB39B0 /* GoogleService-Info.plist */,
+				32F3C7111DC6CBDD00AB39B0 /* Info.plist */,
+				32F3C7121DC6CBDD00AB39B0 /* LaunchScreen.storyboard */,
+				32F3C7131DC6CBDD00AB39B0 /* Main.storyboard */,
+				32F3C7141DC6CBDD00AB39B0 /* MenuViewController.swift */,
+				32F3C7151DC6CBDD00AB39B0 /* Order.swift */,
+				32F3C7161DC6CBDD00AB39B0 /* SelectionViewController.swift */,
 			);
 			path = DeliDash;
 			sourceTree = "<group>";
 			usesTabs = 0;
-		};
-		F1FA0ECD1CE63C2000C2D200 /* DeliDashTests */ = {
-			isa = PBXGroup;
-			children = (
-				F1FA0ECE1CE63C2000C2D200 /* DeliDashTests.swift */,
-				F1FA0ED01CE63C2000C2D200 /* Info.plist */,
-			);
-			path = DeliDashTests;
-			sourceTree = "<group>";
-		};
-		F1FA0ED81CE63C2000C2D200 /* DeliDashUITests */ = {
-			isa = PBXGroup;
-			children = (
-				F1FA0ED91CE63C2000C2D200 /* DeliDashUITests.swift */,
-				F1FA0EDB1CE63C2000C2D200 /* Info.plist */,
-			);
-			path = DeliDashUITests;
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -161,42 +143,6 @@
 			productReference = F1FA0EB61CE63C2000C2D200 /* DeliDash.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F1FA0EC91CE63C2000C2D200 /* DeliDashTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F1FA0EE11CE63C2000C2D200 /* Build configuration list for PBXNativeTarget "DeliDashTests" */;
-			buildPhases = (
-				F1FA0EC61CE63C2000C2D200 /* Sources */,
-				F1FA0EC71CE63C2000C2D200 /* Frameworks */,
-				F1FA0EC81CE63C2000C2D200 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F1FA0ECC1CE63C2000C2D200 /* PBXTargetDependency */,
-			);
-			name = DeliDashTests;
-			productName = DeliDashTests;
-			productReference = F1FA0ECA1CE63C2000C2D200 /* DeliDashTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		F1FA0ED41CE63C2000C2D200 /* DeliDashUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F1FA0EE41CE63C2000C2D200 /* Build configuration list for PBXNativeTarget "DeliDashUITests" */;
-			buildPhases = (
-				F1FA0ED11CE63C2000C2D200 /* Sources */,
-				F1FA0ED21CE63C2000C2D200 /* Frameworks */,
-				F1FA0ED31CE63C2000C2D200 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F1FA0ED71CE63C2000C2D200 /* PBXTargetDependency */,
-			);
-			name = DeliDashUITests;
-			productName = DeliDashUITests;
-			productReference = F1FA0ED51CE63C2000C2D200 /* DeliDashUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -210,16 +156,6 @@
 					F1FA0EB51CE63C2000C2D200 = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
-					};
-					F1FA0EC91CE63C2000C2D200 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
-						TestTargetID = F1FA0EB51CE63C2000C2D200;
-					};
-					F1FA0ED41CE63C2000C2D200 = {
-						CreatedOnToolsVersion = 7.3.1;
-						LastSwiftMigration = 0800;
-						TestTargetID = F1FA0EB51CE63C2000C2D200;
 					};
 				};
 			};
@@ -237,8 +173,6 @@
 			projectRoot = "";
 			targets = (
 				F1FA0EB51CE63C2000C2D200 /* DeliDash */,
-				F1FA0EC91CE63C2000C2D200 /* DeliDashTests */,
-				F1FA0ED41CE63C2000C2D200 /* DeliDashUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -248,23 +182,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1FA0EC41CE63C2000C2D200 /* LaunchScreen.storyboard in Resources */,
-				F1FA0EC11CE63C2000C2D200 /* Assets.xcassets in Resources */,
-				F1FA0EBF1CE63C2000C2D200 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F1FA0EC81CE63C2000C2D200 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F1FA0ED31CE63C2000C2D200 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				32F3C7181DC6CBDD00AB39B0 /* Assets.xcassets in Resources */,
+				32F3C71E1DC6CBDD00AB39B0 /* Main.storyboard in Resources */,
+				32F3C71D1DC6CBDD00AB39B0 /* LaunchScreen.storyboard in Resources */,
+				32F3C71B1DC6CBDD00AB39B0 /* GoogleService-Info.plist in Resources */,
+				32F3C71C1DC6CBDD00AB39B0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,65 +197,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F14D2D001D7251F8001644CB /* Order.swift in Sources */,
-				F1428A6F1CFE64C7008BD39A /* CheckBox.swift in Sources */,
-				F1FA0EBC1CE63C2000C2D200 /* MenuViewController.swift in Sources */,
-				F1FA0EBA1CE63C2000C2D200 /* AppDelegate.swift in Sources */,
-				F14D2CFE1D724B09001644CB /* CheckoutViewController.swift in Sources */,
-				F1428A711CFF353B008BD39A /* SelectionViewController.swift in Sources */,
-				323CB2601D860384005E4E33 /* ChoiceViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F1FA0EC61CE63C2000C2D200 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F1FA0ECF1CE63C2000C2D200 /* DeliDashTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F1FA0ED11CE63C2000C2D200 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F1FA0EDA1CE63C2000C2D200 /* DeliDashUITests.swift in Sources */,
+				32F3C71A1DC6CBDD00AB39B0 /* ChoiceViewController.swift in Sources */,
+				32F3C7211DC6CBDD00AB39B0 /* SelectionViewController.swift in Sources */,
+				32F3C7191DC6CBDD00AB39B0 /* CheckoutViewController.swift in Sources */,
+				32F3C7201DC6CBDD00AB39B0 /* Order.swift in Sources */,
+				32F3C7171DC6CBDD00AB39B0 /* AppDelegate.swift in Sources */,
+				32F3C71F1DC6CBDD00AB39B0 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F1FA0ECC1CE63C2000C2D200 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F1FA0EB51CE63C2000C2D200 /* DeliDash */;
-			targetProxy = F1FA0ECB1CE63C2000C2D200 /* PBXContainerItemProxy */;
-		};
-		F1FA0ED71CE63C2000C2D200 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F1FA0EB51CE63C2000C2D200 /* DeliDash */;
-			targetProxy = F1FA0ED61CE63C2000C2D200 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F1FA0EBD1CE63C2000C2D200 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1FA0EBE1CE63C2000C2D200 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F1FA0EC21CE63C2000C2D200 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F1FA0EC31CE63C2000C2D200 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F1FA0EDC1CE63C2000C2D200 /* Debug */ = {
@@ -379,6 +252,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -421,6 +295,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -431,15 +306,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Eric Leininger (G698BUQGHG)";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Eric Leininger (G698BUQGHG)";
 				DEVELOPMENT_TEAM = G698BUQGHG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Firebase",
+				);
 				INFOPLIST_FILE = DeliDash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.delidash.delidash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "926cef3a-6f2c-4c09-9da4-fcbe29ddf6a2";
 				PROVISIONING_PROFILE_SPECIFIER = "Alex Leininger";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeliDash-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -448,70 +331,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Eric Leininger (G698BUQGHG)";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Eric Leininger (G698BUQGHG)";
 				DEVELOPMENT_TEAM = G698BUQGHG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Firebase",
+				);
 				INFOPLIST_FILE = DeliDash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.delidash.delidash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "926cef3a-6f2c-4c09-9da4-fcbe29ddf6a2";
 				PROVISIONING_PROFILE_SPECIFIER = "Alex Leininger";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeliDash-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		F1FA0EE21CE63C2000C2D200 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 55523JQQBA;
-				INFOPLIST_FILE = DeliDashTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hk.DeliDashTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeliDash.app/DeliDash";
-			};
-			name = Debug;
-		};
-		F1FA0EE31CE63C2000C2D200 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 55523JQQBA;
-				INFOPLIST_FILE = DeliDashTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hk.DeliDashTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeliDash.app/DeliDash";
-			};
-			name = Release;
-		};
-		F1FA0EE51CE63C2000C2D200 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 55523JQQBA;
-				INFOPLIST_FILE = DeliDashUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hk.DeliDashUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = DeliDash;
-			};
-			name = Debug;
-		};
-		F1FA0EE61CE63C2000C2D200 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 55523JQQBA;
-				INFOPLIST_FILE = DeliDashUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hk.DeliDashUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = DeliDash;
 			};
 			name = Release;
 		};
@@ -532,24 +368,6 @@
 			buildConfigurations = (
 				F1FA0EDF1CE63C2000C2D200 /* Debug */,
 				F1FA0EE01CE63C2000C2D200 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F1FA0EE11CE63C2000C2D200 /* Build configuration list for PBXNativeTarget "DeliDashTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F1FA0EE21CE63C2000C2D200 /* Debug */,
-				F1FA0EE31CE63C2000C2D200 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F1FA0EE41CE63C2000C2D200 /* Build configuration list for PBXNativeTarget "DeliDashUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F1FA0EE51CE63C2000C2D200 /* Debug */,
-				F1FA0EE61CE63C2000C2D200 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
