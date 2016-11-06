@@ -19,7 +19,6 @@
 		32F3C7191DC6CBDD00AB39B0 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3C70E1DC6CBDD00AB39B0 /* CheckoutViewController.swift */; };
 		32F3C71A1DC6CBDD00AB39B0 /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3C70F1DC6CBDD00AB39B0 /* ChoiceViewController.swift */; };
 		32F3C71B1DC6CBDD00AB39B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32F3C7101DC6CBDD00AB39B0 /* GoogleService-Info.plist */; };
-		32F3C71C1DC6CBDD00AB39B0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32F3C7111DC6CBDD00AB39B0 /* Info.plist */; };
 		32F3C71D1DC6CBDD00AB39B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F3C7121DC6CBDD00AB39B0 /* LaunchScreen.storyboard */; };
 		32F3C71E1DC6CBDD00AB39B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32F3C7131DC6CBDD00AB39B0 /* Main.storyboard */; };
 		32F3C71F1DC6CBDD00AB39B0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F3C7141DC6CBDD00AB39B0 /* MenuViewController.swift */; };
@@ -150,7 +149,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Alexander Leininger and Thomas Barrett";
 				TargetAttributes = {
 					F1FA0EB51CE63C2000C2D200 = {
@@ -186,7 +185,6 @@
 				32F3C71E1DC6CBDD00AB39B0 /* Main.storyboard in Resources */,
 				32F3C71D1DC6CBDD00AB39B0 /* LaunchScreen.storyboard in Resources */,
 				32F3C71B1DC6CBDD00AB39B0 /* GoogleService-Info.plist in Resources */,
-				32F3C71C1DC6CBDD00AB39B0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
