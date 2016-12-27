@@ -155,6 +155,7 @@
 					F1FA0EB51CE63C2000C2D200 = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -307,7 +308,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Eric Leininger (G698BUQGHG)";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Eric Leininger (G698BUQGHG)";
-				DEVELOPMENT_TEAM = G698BUQGHG;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 55523JQQBA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -315,10 +317,10 @@
 				);
 				INFOPLIST_FILE = DeliDash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.delidash.delidash;
+				PRODUCT_BUNDLE_IDENTIFIER = com.delidash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "926cef3a-6f2c-4c09-9da4-fcbe29ddf6a2";
-				PROVISIONING_PROFILE_SPECIFIER = "Alex Leininger";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DeliDash-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -332,7 +334,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Eric Leininger (G698BUQGHG)";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Eric Leininger (G698BUQGHG)";
-				DEVELOPMENT_TEAM = G698BUQGHG;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 55523JQQBA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -340,10 +343,10 @@
 				);
 				INFOPLIST_FILE = DeliDash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.delidash.delidash;
+				PRODUCT_BUNDLE_IDENTIFIER = com.delidash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "926cef3a-6f2c-4c09-9da4-fcbe29ddf6a2";
-				PROVISIONING_PROFILE_SPECIFIER = "Alex Leininger";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DeliDash-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
