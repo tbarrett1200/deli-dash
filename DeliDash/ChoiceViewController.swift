@@ -15,7 +15,12 @@ class ChoiceViewController: UIViewController {
     }
 
     @IBAction func loadOrder(_ sender: UIButton) {
-        Order.loadSandwich(view: self)
+        if Order.currentOrder.load() == false {
+            let alertController = UIAlertController(title: "No Order Has Been Saved", message: nil, preferredStyle: .alert)
+            let continueAction = UIAlertAction(title: "Continue", style: .default, handler: nil)
+            alertController.addAction(continueAction)
+            present(alertController, animated: true, completion: nil)
+        }
     }
     
     override func didReceiveMemoryWarning() {
