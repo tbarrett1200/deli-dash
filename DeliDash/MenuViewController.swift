@@ -26,7 +26,7 @@ class MenuViewController: UIViewController, UITextFieldDelegate{
     var regularOffset: CGFloat = 0.0
     
     //Constants
-    let startTime = 6.0 //6:30
+    let startTime = 6.0 //6:00
     let endTime = 10.0 //10:00
     
     override func viewDidLoad() {
